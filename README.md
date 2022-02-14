@@ -1,6 +1,6 @@
 # Casper NCTL - Docker Container
 
-[NCTL](https://github.com/casper-network/casper-node/tree/release-1.4.3/utils/nctl) は、CLIアプリケーションであり、1つ以上のCasperネットワークをローカルでコントロールする為のものです。多くの開発者が、ブロックチェーンにデプロイする前に、小規模なテストネットワークを起動させてテストをローカルで実施したいと思うものです。
+[NCTL](https://github.com/casper-network/casper-node/tree/release-1.4.3/utils/nctl) は、CLIアプリケーションであり、1つ以上のCasperネットワークをローカルでコントロールする為のものです。殆どの開発者は、ブロックチェーンにデプロイする前に、小規模なテストネットワークを起動させてローカルでテストを実施したいと思うものです。
 
 ## このイメージの使い方
 

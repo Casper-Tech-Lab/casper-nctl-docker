@@ -32,7 +32,7 @@ Powershellターミナル内で、下記を実行してください。
 
 ホストマシーンにて`nctl-view-faucet-account`, `nctl-transfer-native` などのコマンドを実行できるようになりました。全てのコマンドリストは、[こちら](https://github.com/casper-network/casper-node/blob/release-1.4.3/utils/nctl/docs/commands.md)です。
 
-たまに、faucetやノード、もしくは事前に定義されたユーザーの秘密鍵が必要となることがありますが、`nctl-*` コマンドをアクティベート後、下記コマンドを実行し取得できます。
+たまに、faucetやノード、もしくは事前に定義されたユーザーの秘密鍵が必要となることがありますが、`nctl-*` コマンドをアクティベート後であれば下記コマンドで取得できます。
 
 ```bash
 nctl-view-faucet-secret-key
@@ -48,7 +48,7 @@ nctl-view-user-secret-key user=3
 
 ### 事前に定義したアカウント鍵でコンテナを実行する方法
 
-コンテナを起動する度に、NCTLをランダムに生成したアカウント鍵にて実行させます。下記の追加パラメーターをコンテナで実行させ、事前に定義、および生成されたアカウント鍵のセットを使用します。
+コンテナを起動する度に、ランダムに生成したアカウント鍵にてNCTLを実行させます。下記の追加パラメーターをコンテナで実行させ、事前に定義および生成されたアカウント鍵のセットを使用します。
 
 ```bash
 docker run --rm -it --name mynctl -d -p 11101:11101 makesoftware/casper-nctl /bin/bash -c "/home/casper/restart-with-predefined-accounts.sh"
